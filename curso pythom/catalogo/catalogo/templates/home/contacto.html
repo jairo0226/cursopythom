@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	Contactanos
+{% endblock %}
+
+{% block content %}
+<center>
+	<BODY BGCOLOR = "red"LINK ="" text = "white" VLINK = "#ff0000">
+	<form action="." method = "POST">
+		{% csrf_token %}
+		{{ form.as_p }}
+		<button type = "submit" class="btn btn-inverse"> Guardar </button>	
+	</form>
+	</BODY>
+</center>
+{% endblock %}
